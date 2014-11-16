@@ -1,0 +1,51 @@
+/*
+ * CustomScrollbar.js styles
+ */
+
+html::-webkit-scrollbar {
+	width:0 !important;
+}
+
+#scrollbar {
+	position:absolute;
+	top:0;
+	right:0;
+	height:100%;
+	width:20px;
+	background-color:#272b2f;
+	z-index:2;
+}
+
+#scrollthumb {
+	position:absolute;
+	top:0;
+	right:0;
+	width:20px;
+	background:#e94525;
+}
+
+#scrollthumb:before {
+	position:absolute;
+	top:0;
+	left:0;
+	width:20px;
+	height:20px;
+	background-image:url("../assets/arrows.png");
+	background-repeat:no-repeat;
+	background-position:0 0;
+	content:"";
+	display:block;
+}
+
+#scrollthumb:after {
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:20px;
+	height:20px;
+	background-image:url("../assets/arrows.png");
+	background-repeat:no-repeat;
+	background-position:0 -20px;
+	content:"";
+	display:block;
+}

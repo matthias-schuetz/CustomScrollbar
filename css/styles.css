@@ -16,6 +16,7 @@ html, body {
 
 body {
 	background:#ffffff;
+	color:#000000;
 }
 
 ::selection {
@@ -240,6 +241,11 @@ pre {
 	.fullwidth.compact #header {
 		height:393px;
 	}
+	
+	#teaser {
+		width:520px;
+		background:cyan;
+	}
 
 	#teaser h1 {
 		font-size:52px;
@@ -308,6 +314,10 @@ pre {
 }
 
 @media (max-width:570px) {
+	#teaser {
+		width:420px;
+	}
+	
 	#teaser h1 {
 		font-size:42px;
 	}
@@ -317,11 +327,19 @@ pre {
 	}
 	
 	pre {
+		margin-right:20px;
 		font-size:15px;
+		word-break: break-all;
+		word-wrap: break-word;
+		white-space: pre-wrap;
 	}
 }
 
 @media (max-width:470px) {
+	#teaser {
+		width:250px;
+	}
+
 	#teaser h1 {
 		font-size:25px;
 		line-height:80px;

@@ -112,7 +112,7 @@ var CustomScrollbar = function(options) {
 		}
 
 		if (_options.bodyPaddingRight) {
-			styleElement.innerHTML += "body { padding-right: " + _options.bodyPaddingRight + "px; }"
+			styleElement.innerHTML += "body { padding-right: " + _options.bodyPaddingRight + "px; }";
 		}
 
 		_scrollContent.appendChild(styleElement);

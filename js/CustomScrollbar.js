@@ -121,13 +121,13 @@ var CustomScrollbar = function(options) {
 	}
 
 	function _getBrowserInfo() {
-		var isTouch = (("ontouchstart" in window) || window.DocumentTouch && document instanceof DocumentTouch);
+		var isTouch = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 		return {
 			isFirefox: navigator.userAgent.match(/(firefox)/i) ? true : false,
 			isIE: navigator.userAgent.match(/(trident)/i) ? true : false,
 			isWebkit: navigator.userAgent.match(/(chrome|safari)/i) ? true : false,
-			useScrollbar: !isTouch && !navigator.msMaxTouchPoints
+			useScrollbar: !isTouch
 		};
 	}
 

@@ -97,6 +97,15 @@ var CustomScrollbar = function(options) {
 			_scrollbar.style.height = _px(_scrollContent.scrollHeight);
 		}
 	}
+	
+	function _redrawScrollbar() {
+		_recalculateScrollbarHeight();
+
+		setTimeout(function() {
+			_update();
+			_update();
+		}, 0);
+	}
 
 	function _applyBrowserStyle() {
 		var styleElement = document.createElement("style");
@@ -189,15 +198,7 @@ var CustomScrollbar = function(options) {
 		});
 
 		window.addEventListener("scroll", _updateScrollbarThumb);
-
-		window.addEventListener("resize", function () {
-			_recalculateScrollbarHeight();
-
-			setTimeout(function() {
-				_update();
-				_update();
-			}, 0);
-		});
+		window.addEventListener("resize", _redrawScrollbar);
 	}
 
 	_browserInfo = _getBrowserInfo();
@@ -205,4 +206,8 @@ var CustomScrollbar = function(options) {
 	if (_browserInfo.useScrollbar) {
 		_init();
 	}
+	
+	return {
+		redrawScrollbar: _redrawScrollbar
+	};
 };

@@ -6,6 +6,10 @@ html::-webkit-scrollbar {
 	width:0 !important;
 }
 
+html {
+	-ms-overflow-style:none;
+}
+
 #scrollbar {
 	position:absolute;
 	top:0;

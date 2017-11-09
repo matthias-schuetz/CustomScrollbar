@@ -43,7 +43,7 @@ var CustomScrollbar = function(options) {
 	}
 
 	function _createDOM() {
-		_scrollContent = _browserInfo.isWebkit ? document.scrollingElement : document.querySelector("body");
+		_scrollContent = _browserInfo.isWebkit && document.scrollingElement ? document.scrollingElement : document.querySelector("body");
 		_scrollbar = _createDiv(_options.selectors.scrollbar);
 		_scrollbarThumb = _createDiv(_options.selectors.scrollbarThumb, _scrollbar);
 	}

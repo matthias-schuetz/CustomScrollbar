@@ -16,7 +16,7 @@ CustomScrollbar.js is a small script allows you to style the vertical scrollbar 
 As you can see the script makes use of the default browser scroll behavior. This means that no kinetic scrolling or real-time calculations are needed. CustomScrollbar.js simply hides the native window scrollbars and adds a custom overlay to the web page. The script is well tested on different platforms and browsers including Windows, Mac OS X, iOS, Android and mobile devices like Android smartphones and tablets, iPhone/iPad and Microsoft Surface. For mobile devices there is a small device detection which disables CustomScrollbar.js since you normally want to make use of the native mobile scrolling on that devices.
 
 ## Demo
-You can check the <a href="http://matthias-schuetz.github.com/customscrollbar.js">example.html</a> that is included in this package. This is also the website of CustomScrollbar.js.
+You can check the <a href="http://matthias-schuetz.github.io/customscrollbar.js">example.html</a> that is included in this package. This is also the website of CustomScrollbar.js.
 
 ## Usage
 

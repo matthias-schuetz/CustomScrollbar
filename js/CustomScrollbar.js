@@ -1,7 +1,7 @@
 /**
  * CustomScrollbar.js
  * A compact scrollbar script that allows a custom styled scrollbar by using browsers' default scroll behavior.
- * Matthias Schuetz, http://matthiasschuetz.com
+ * Matthias Schuetz, https://github.com/matthias-schuetz
  *
  * Copyright (C) Matthias Schuetz
  * Free to use under the MIT license
